@@ -2,6 +2,7 @@ class Agentreg < Formula
   desc "DNS for AI agents: register, discover, and health-check MCP agents"
   homepage "https://github.com/mkk2026/agentreg"
   version "0.1.0"
+  license "MIT"
 
   on_macos do
     on_arm do
