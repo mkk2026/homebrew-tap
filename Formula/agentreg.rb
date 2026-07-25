@@ -1,28 +1,28 @@
 class Agentreg < Formula
   desc "DNS for AI agents: register, discover, and health-check MCP agents"
   homepage "https://github.com/mkk2026/agentreg"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/mkk2026/agentreg/releases/download/v0.1.0/agentreg_0.1.0_darwin_arm64.tar.gz"
-      sha256 "ce47a2606208e6c361a63a894af33f3c34e0188c56c8788063f0678f06b4906f"
+      url "https://github.com/mkk2026/agentreg/releases/download/v0.1.1/agentreg_0.1.1_darwin_arm64.tar.gz"
+      sha256 "0abb7b5445423e266262bd16b02d1e684d005f6194947b28d6024f93e238455a"
     end
     on_intel do
-      url "https://github.com/mkk2026/agentreg/releases/download/v0.1.0/agentreg_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d1d9634168c3f312cd0e9268b1679290013d2c291f9b1b6014aec84e9700472c"
+      url "https://github.com/mkk2026/agentreg/releases/download/v0.1.1/agentreg_0.1.1_darwin_amd64.tar.gz"
+      sha256 "edd2642a99b469b754ef41a59f19a44495f7cecc96d4d438517d6bd5a965448b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mkk2026/agentreg/releases/download/v0.1.0/agentreg_0.1.0_linux_arm64.tar.gz"
-      sha256 "b4220c4c87d54acd67dbd7e09e7509456c7b6497f510afbb696f74b9f7ba6ca1"
+      url "https://github.com/mkk2026/agentreg/releases/download/v0.1.1/agentreg_0.1.1_linux_arm64.tar.gz"
+      sha256 "d60cc581c556637d45d1b800ffa0ab87c49bd1dd5f9b8330ef7c7f128f2bac49"
     end
     on_intel do
-      url "https://github.com/mkk2026/agentreg/releases/download/v0.1.0/agentreg_0.1.0_linux_amd64.tar.gz"
-      sha256 "c612d0f6dcd197732f6a7ac68aa1ba1467a399050d05162588cdcd82dad523dd"
+      url "https://github.com/mkk2026/agentreg/releases/download/v0.1.1/agentreg_0.1.1_linux_amd64.tar.gz"
+      sha256 "28d1df359afd91e6019d311f66dea15f28c433266f98a94333d834007cd41da4"
     end
   end
 
@@ -31,6 +31,6 @@ class Agentreg < Formula
   end
 
   test do
-    assert_match "0.1.0", shell_output("#{bin}/agentctl --version")
+    assert_match "0.1.1", shell_output("#{bin}/agentctl --version")
   end
 end
